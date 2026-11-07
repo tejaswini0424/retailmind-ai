@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="RetailMind AI — grounded retail analytics, interactive dashboards and natural language insights."><title>RetailMind AI · Retail intelligence</title><link rel="stylesheet" href="/styles.css"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Crect width='50' height='50' rx='12' fill='%230d182a'/%3E%3Cpath d='M25 7L43 25 25 43 7 25Z' fill='%2334d7b4'/%3E%3C/svg%3E"><script defer src="/app.js"></script></head>
+<body class="auth-pending">
+<aside>
+  <a class="brand" href="/"><span class="brand-icon">◈</span><span>RetailMind <b>AI</b><small>RETAIL INTELLIGENCE</small></span></a>
+  <div class="nav-label">WORKSPACE</div>
+  <nav aria-label="Main navigation">
+    <button data-page="overview" class="active"><span>▦</span>Overview</button>
+    <button data-page="ask"><span>✧</span>Ask RetailMind <small>AI</small></button>
+    <button data-page="products"><span>▥</span>Products & stores</button>
+    <button data-page="customers"><span>♧</span>Customers</button>
+    <button data-page="data"><span>▤</span>Data studio</button>
+  </nav>
+  <div class="nav-label filter-heading">YOUR DATA</div>
+  <label>Active dataset<select id="dataset" aria-label="Active dataset"></select></label>
+  <label>From<input type="date" id="start"></label>
+  <label>To<input type="date" id="end"></label>
+  <label>Region<select id="region"><option value="">All regions</option></select></label>
+  <label>Category<select id="category"><option value="">All categories</option></select></label>
+  <label>Store<select id="store"><option value="">All stores</option></select></label>
+  <button id="reset" class="ghost">↺ Reset filters</button>
+  <div class="sidebar-footer"><span class="status-dot"></span> Grounded in your data<small>Calculated results · no API key</small></div>
+</aside>
+<main>
+  <header><span>WORKSPACE <span class="slash">/</span> <span id="breadcrumb">Overview</span></span><div class="header-account"><span class="live"><i></i> LIVE ANALYTICS</span><span id="signed-in-user" class="account-name"></span><a href="/login.html?mode=register" class="secondary create-account-link">Create account</a><button id="logout" class="secondary logout-button">Log out ↗</button></div></header>
+  <div class="title-row"><div><p class="eyebrow">A SMARTER WAY TO UNDERSTAND RETAIL</p><h1 id="title">A clearer view of your business.</h1><p id="subtitle">Your business, translated into better decisions.</p></div><button id="export" class="secondary">↓ Export CSV</button></div>
+  <div id="notice" role="status" hidden></div>
+  <div id="loading" aria-live="polite" hidden><span class="spinner"></span> Calculating your insights…</div>
+  <section id="content" aria-label="Dashboard content"></section>
+  <footer>◈ RetailMind AI <span>Retrieval-grounded retail intelligence · INR</span></footer>
+</main>
+</body></html>

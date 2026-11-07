@@ -1,0 +1,4 @@
+app_name: RetailMind AI
+currency: INR
+sample_rows: 5000
+retrieval_limit: 5

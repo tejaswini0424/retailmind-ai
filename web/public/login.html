@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Sign in to your RetailMind AI dashboard."><title>Login · RetailMind AI</title><link rel="stylesheet" href="/styles.css"><script defer src="/login.js"></script></head>
+<body class="login-page">
+<div class="login-shell">
+  <section class="login-story" aria-label="About RetailMind">
+    <a class="brand" href="/"><span class="brand-icon">◈</span><span>RetailMind <b>AI</b><small>RETAIL INTELLIGENCE</small></span></a>
+    <div><p class="eyebrow">YOUR NEXT DECISION STARTS HERE</p><h1>Know your numbers.<br>Find your next move.</h1><p class="login-intro">Bring your sales, stores, and customers into focus with answers grounded in your business data.</p><div class="login-features"><span>◫ &nbsp; Interactive retail analytics</span><span>✧ &nbsp; Answers backed by real records</span><span>◇ &nbsp; Your workspace, ready when you are</span></div></div>
+    <p class="caption">Retrieval-grounded intelligence. Clearer business decisions.</p>
+  </section>
+  <section class="login-panel" aria-label="Login">
+    <div class="login-card"><span class="login-symbol">◈</span><p class="eyebrow">WELCOME TO YOUR WORKSPACE</p><div class="auth-tabs" role="group" aria-label="Account access"><button id="login-tab" class="selected" type="button" aria-pressed="true">Login</button><button id="register-tab" type="button" aria-pressed="false">Create account</button></div><h2 id="auth-heading">Sign in to RetailMind</h2><p id="auth-description" class="caption">Enter your dashboard credentials to continue.</p>
+    <form id="login-form">
+      <label for="username">Username<input id="username" name="username" autocomplete="username" required placeholder="Enter your username" autofocus></label>
+      <label for="password">Password<div class="password-field"><input id="password" name="password" type="password" autocomplete="current-password" required placeholder="Enter your password"><button id="toggle-password" type="button" aria-label="Show password" aria-pressed="false">Show</button></div></label>
+      <div id="login-error" role="alert" hidden></div>
+      <button id="login-submit" class="primary" type="submit">Sign in →</button>
+    </form>
+    <p id="auth-switch" class="login-help">New to RetailMind? <button id="switch-mode" type="button">Create an account</button></p><div class="login-security">◇ &nbsp; Secure session · automatically expires after 8 hours</div></div>
+  </section>
+</div>
+</body></html>
